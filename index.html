@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Journal</title>
+</head>
+<body>
+
+    <h1>Mood Journal</h1>
+
+    <!--THE FORM: Where you log today's mood -->
+    <form id="mood-form">
+        <label for="mood">How are you feeling today?</label>
+        <select id="mood" required>
+            <option value="">Select your mood</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="angry">Angry</option>
+            <option value="calm">Calm</option>
+        </select>
+    <label for="notes">Notes (optional):</label>
+    <input type="text" id="note" placeholder="Add any notes...">
+    <button type="submit">Save Mood</button>
+</form>
+
+<!-- STATUS: where the server's "saved!" reply will show up-->
+<p id="status"></p>
+
+<!--PAST ENTRIES: script.js will fill this list in-->
+<h2>Past Entries</h2>
+<ul id="entries"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
